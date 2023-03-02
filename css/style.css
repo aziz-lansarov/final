@@ -1,12 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto";
 }
 
 .container {
     padding:  0 165px;
+   
 }
+.aside {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 110px;
+    align-items: center;
+}
+.content {
+    margin-top: 40px;
+}
+.title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 15px;
+}
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6F7CB2;;
+}
+.top {
+    margin-top: 10px;
+}
+.icons {
+    display: flex;
+    margin-top: 80px;
+}
+.white {
+    fill: black;
+}
+.icon:last-child {
+    margin-left: 50px;
+}
+.scrip {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 5px;
+}
+.scription {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #5D6970;
+}
+
 .landing {
     display: flex;
     justify-content: space-around;
@@ -18,7 +68,7 @@
     margin-left: 191px;    
 }
 
-.text {
+.text1 {
     margin-top: 172px;
     width: 445px;
     margin-left: 155px;
@@ -74,4 +124,67 @@ h2 {
     background-color: #273880;
     
 
+}
+@media screen and (max-width: 375px) {
+    .container {
+        padding: 0 16px;
+    }
+    .aside {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        color: #fff;
+    }
+    .bg {
+        background-color: #9CA7DF;
+    }
+    .picture {
+        width: 300px;
+        margin-top: 40px;
+    }
+    .title {
+        font-size: 26px;
+    }
+    .text {
+        color: #fff;
+    }
+    .icons {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    .icon:last-child {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .white {
+        fill: #fff;
+    }
+    .scription {
+        color: #fff;
+    }
+    
+
+}
+
+@media screen and (max-width: 1250px) {
+    .container {
+        padding: 0 60px;
+    }
+    .aside {
+        display: flex;
+        flex-direction: column;
+    }
+    .picture {
+        width: 600px;
+        margin-top: 0px;
+    }
+    .content {
+        align-items: center;
+    }
+    .icons {
+        margin-bottom: 90px;
+    }  
 }
