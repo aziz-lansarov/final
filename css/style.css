@@ -11,6 +11,130 @@
   margin: 0 auto;
    
 }
+
+
+main {
+    position: relative; ;
+}
+
+header {
+    display: flex;
+    padding-top: 12px;
+    padding: 0 165px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.nav_menu {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #505F98;
+    margin-right: 60px;
+    
+}
+
+.nav_menu:last-child {
+    margin-right: 0;
+}
+ 
+.nav {
+    display: flex;
+    width: 100%;
+ 
+    
+    
+   
+    align-items: center;
+}
+
+
+.right_block {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.header_button {
+    text-decoration: none;
+    
+}
+
+.btn {
+    padding: 4px 0;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #111B47;
+    width: 160px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+  .container {
+    width: 1110px;
+    margin: 0 auto;
+  }
+  .hero {
+    height: 100vh;
+    background-image: url(/img/pic.svg);
+    background-size: auto calc(100vh + 30px);
+    background-repeat: no-repeat;
+   
+    background-position: calc(100% + 320px) bottom;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 70px);
+  }
+
+  
+
+  
+  .hero_title {
+
+    width: 539px;
+    
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #091133;
+}
+
+  .hero-small-img {
+
+    width: 300px;
+    margin-bottom: 30px;
+    display: block;
+    margin: 0 auto;
+    
+    display: none;
+  }
+
+  .hero_subtitle {
+     margin-top: 20px;
+    color: #505F98;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+
+  .hero_text {
+    width: 50%;
+  }
+
+
+
+
+  /* section 1 */
+
+
 .aside {
     display: flex;
     flex-direction: row-reverse;
@@ -62,7 +186,7 @@
 
 
 
-/* section */
+/* section 2*/
 
 
 .container {
@@ -276,3 +400,36 @@ footer p{
     justify-content: space-between;
 }
 
+
+@media screen and (max-width: 1150px) {
+    .container {
+        width: 800px;
+        margin: 0 auto;
+    }
+    .hero_text {
+
+        width: 50%;
+    }
+    .hero {
+  
+        background-position: calc(100% + 420px) bottom;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .hero-text {
+        width: 100%;
+    }
+    .hero {
+       
+        background-image: none;
+    }
+    .hero-small-img {
+   
+        display: block;
+    }
+  }
