@@ -464,6 +464,79 @@ footer p{
     .hero {
   
         background-position: calc(100% + 420px) bottom;
+
+    }
+
+    .aside {
+    display: flex;
+    flex-direction: column;
+    }
+    .picture {
+    width: 600px;
+    margin-top: 0px;
+    }
+    .content {
+    align-items: center;
+    }
+    .icons {
+    margin-bottom: 90px;
+    }
+
+
+    .intro_block {
+        display: flex;
+        flex-direction: column;
+        padding-top: 67px;
+        padding-bottom: 0;
+       
+    }
+
+    .intro_title {
+        text-align: center;
+        font-size: 26px;
+    }
+    .intro_left_block {
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 26px;
+    }
+
+
+    .intro_left_block2 {
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 26px;
+      
+    }
+
+    .intro_left_block3{
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 26px;
+    }
+
+
+    .intro_right_block {
+        width: 100%;
+        
+        padding-bottom: 50px;
+    }
+
+
+
+    .intro_right_block:last-child {
+        padding-bottom: 95px;
+    }
+
+    .intro_button {
+        display: flex;
+        justify-content: center;
     }
   }
   @media screen and (max-width: 850px) {
@@ -483,6 +556,45 @@ footer p{
    
         display: block;
     }
+
+    .nav {
+        display: none;
+    }
+    .burger_menu {
+        display: block;
+    }
+    .header {
+        width: 100%;
+        display: flex;
+       
+    }
+
+    .hero_text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero_title {
+       width: 350px;
+       text-align: center;
+        font-size: 30px;
+        
+       
+    }
+
+    .hero_subtitle {
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        width: 100%;
+    }
+    .header_button {
+        display: none;
+        }
+
+
   }
 
 
@@ -539,7 +651,6 @@ footer p{
 
     }
 
-   
     .main_btn {
         
         margin-right: 0;
@@ -553,11 +664,6 @@ footer p{
         align-items: center;
         width: 375px;
     }
-
-    
-
-
-
 
     
     .aside {
@@ -659,22 +765,14 @@ footer p{
         justify-content: center;
     }
 
-
-
-    
-
-}
-
-@media screen and (max-width: 375px) {
-
     .pervyi {
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
     }
     footer {
-    padding: 0 16px;
-    height: 100%;
+        padding: 0 16px;
+        height: 100%;
     }
 
     .footer-menu {
